@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
                 if (enemyData.enemies <= 0)
                 {
                     gameData.clearRange = clearView.GetClearRange();
+                    gameData.anLookStages.Add(clearView.GetClearRange());
                     gameData.isClear = true;
                     cusLook.AnLookCus();
                     clearView.GameCleaScene();

@@ -21,6 +21,7 @@ public class ClearStageJudgePresenter : MonoBehaviour
     private void Oninitialize()
     {
         judgeView.Juge(gameData.isClear, gameData.clearRange);
+        judgeView.AnLookChack(gameData.anLookStages);
     }
 
 
